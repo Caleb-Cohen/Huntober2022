@@ -12,7 +12,7 @@
 
 function sortArray(array){
     const oddsNums = arr.filter(n => n % 2 !== 0).sort((a,b) => a-b)
-    return arr.map(n => n % 2 === 0 ? n  oddsNums.shift())
+    return arr.map(n => n % 2 === 0 ? n : oddsNums.shift())
 }
 
 console.log(sortArray([7, 1]), [1, 7])
